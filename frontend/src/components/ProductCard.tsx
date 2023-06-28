@@ -32,10 +32,10 @@ const ProductCard = ({data, id, prodCategory} : ProductCardProps) => {
                         <div className="product-card-wrapper" >
                             <div className="product-card-img">
                                 <LazyLoadImage
-                                src={import.meta.env.VITE_RAMEN_HOUSE_APP_URL + img?.data?.attributes?.formats.large?.url} 
-                                alt={altImg} 
-                                effect="blur"
-                                loading="lazy"
+                                    src={img?.data?.attributes?.formats.large?.url} 
+                                    alt={altImg} 
+                                    effect="blur"
+                                    loading="lazy"
                                 />                                   
                             </div>
                             <div className="product-card-info">

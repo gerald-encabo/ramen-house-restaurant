@@ -30,7 +30,7 @@ const CartSidebarItemList = ({item}: any) => {
 
   return (
     <div className='cart-sidebar-item-list'>
-        <img src={import.meta.env.VITE_RAMEN_HOUSE_APP_URL + img?.data?.attributes?.formats.large?.url} alt={name} width="70" height="70" loading="lazy" />
+        <img src={img?.data?.attributes?.formats.large?.url} alt={name} width="70" height="70" loading="lazy" />
         <div className='cart-sidebar-item-list_info'>
             <h4>{name}</h4>
             <div className='price_and_quantity'>
