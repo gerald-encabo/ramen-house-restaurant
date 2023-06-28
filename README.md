@@ -1,6 +1,6 @@
 ## Ramen House - Vite React Typescript Strapi
 
-This is Full Stack responsive eCommerce webpage focusing on the food industry of Ramen or Japanese Noodle soup.
+This is full stack responsive ecommerce webpage focusing on the food industry of Ramen or Japanese Noodle soup.
 
 #### Front-End:
 A simple Single Page Application (SPA) with multiple components in Hooks, and it has a redux feature which used to add, remove and delete items into the shopping cart.
