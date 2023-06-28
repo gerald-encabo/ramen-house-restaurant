@@ -11,7 +11,7 @@ SASS (Synthactically Awesome Style Sheets) has been implement as CSS pre-process
 For Backend, Strapi Headless CMS is the choice to manage all the content for this webpage, and the content are being pull using GraphQL.
 
 #### Live Site:
-https://ramen-house.vercel.app/
+
 
 #### Main Page Display:
 ![ramen-house](https://github.com/gerald-encabo/ramen-house/assets/15988182/5ee6ce59-8f94-4caf-a06a-e0a1c1594226)
