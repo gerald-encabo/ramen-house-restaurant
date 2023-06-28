@@ -1,0 +1,84 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.cart-sidebar-item-list {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    align-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $primary;
+
+    & > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        text-align: center;
+    }
+
+    &_info h4 { 
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &_info .price_and_quantity {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+
+    &_info .price_and_quantity h6 {
+        font-size: 15px;
+    }
+
+    &_info .cart-sidebar-quantity {
+        display: flex;
+        color: $light;
+        padding: 6px 10px;
+        margin-bottom: 10px;
+        justify-content: space-around;
+        width: 100%;
+        border-bottom: 4px solid $primary;
+        border-right: 1px solid $primary;
+    }
+
+    &_info .cart-sidebar-quantity .increase_btn,
+    &_info .cart-sidebar-quantity .decrease_btn {
+        font-size: 15px;
+    }
+
+    &_info .cart-sidebar-quantity .increase_btn:hover,
+    &_info .cart-sidebar-quantity .decrease_btn:hover {
+        color: $primary;
+        filter: drop-shadow(0px 0px 15px $primary);
+        cursor: pointer;
+    }
+
+    &_info .cart-sidebar-quantity .total_quantity {
+        margin: 0 20px;
+    }
+
+    &-delete_btn {
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    &-delete_btn:hover {
+        color: $primary;
+        filter: drop-shadow(0px 0px 15px $primary);
+    }
+}

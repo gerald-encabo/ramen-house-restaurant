@@ -1,0 +1,111 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    font-weight: 700;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+
+    &-shrink {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: $secondary;
+        z-index: 999;
+    }
+
+    &-cart, &-menu {
+        color: $light;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &-cart:hover, &-menu:hover {
+        color: $primary;
+        filter: drop-shadow(0px 0px 15px $primary);
+    }
+
+    &-cart span, &-menu span {
+        font-size: 1.5rem;
+        padding: 0 5px;
+    }
+
+    &-logo {
+        color: $light;
+        font-size: 2rem;
+        padding: 0 20px 4px;
+        box-shadow: $primary 2px 4px;
+    }
+
+    &-logo-container {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-logo-icon { 
+        font-size: 2.5rem;
+        margin: 0 10px;
+    }
+    
+    &-quantity { 
+        position: absolute;
+        top: -8px;
+        left: 65px;
+        background-color: $primary;
+        color: $dark;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        font-size: .8rem !important;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+@include mobile-devices {
+    .navbar {
+        height: 70px;
+
+        &-cart, &-menu {
+            font-size: 1rem;
+        }
+
+        &-cart span, &-menu span { 
+            font-size: 1.4rem;
+        }
+
+        &-logo-icon {
+            font-size: 2rem;
+        }
+
+        &-logo-name {
+            display: none;
+        }
+
+        &-logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-quantity { 
+            left: 53px;
+        }
+    }
+}
+

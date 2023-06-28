@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousel_lists",
+  "info": {
+    "singularName": "carousel-list",
+    "pluralName": "carousel-lists",
+    "displayName": "Carousel List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "float"
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "altImg": {
+      "type": "string"
+    }
+  }
+}

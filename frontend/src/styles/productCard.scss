@@ -1,0 +1,68 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+    &-wrapper {
+        margin: 0 2rem;
+        line-height: 2;
+        width: 300px;
+    }
+
+    &-img {
+        overflow: hidden;
+        box-shadow: 5px 9px $primary;
+        height: 300px;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-img img {
+        height: 300px;
+        min-width: 300px;
+        max-width: 100%;
+    }
+
+    &-img img:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    &-name {
+        font-weight: 400;
+        font-size: clamp(1.2rem, 1.4rem, 1.6rem);
+    }
+
+    &-desc {
+        margin-bottom: 1rem;
+        font-size: clamp(.8rem, 1rem, 1.2rem);
+    }
+
+    &-price{
+        margin-bottom: 1rem;
+        font-size: clamp(1rem, 1.2rem, 1.4rem);
+    }
+}
+
+
+@include mobile-devices {
+    .product-card {
+        &-wrapper {
+            margin: 0;
+        }
+    }
+}

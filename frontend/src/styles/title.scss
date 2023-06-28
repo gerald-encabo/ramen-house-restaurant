@@ -1,0 +1,40 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: $primary 2px 4px;
+    max-width: 100%;
+    width: 25%;
+
+    & > h1 {
+        padding: 0 20px 4px;
+        font-size: 2rem;
+    }
+}
+
+
+@include laptop-devices {
+    .title {
+        width: 30%;
+    }
+}
+
+@include tablet-devices {
+    .title {
+        width: 40%;
+    }
+}
+
+@include mobile-devices {
+    .title {
+        width: 70%;
+
+        & > h1 {
+            font-size: 1.8rem;
+        }
+    }
+}

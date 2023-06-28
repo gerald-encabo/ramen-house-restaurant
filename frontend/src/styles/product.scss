@@ -1,0 +1,18 @@
+@import '@/styles/color.scss';
+@import '@/styles/media-queries.scss';
+
+.product {
+    width: 100vw;
+    height: auto;
+    padding: 2rem calc((100vw - 1300px)/2);
+    background: $secondary;
+    color: $light;
+    padding-top: 50px;
+
+    & > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
