@@ -61,7 +61,7 @@ const Slider = () => {
                     <div className="special-wrapper" key={index}>
                         <div className="special-img" 
                              style={{ 
-                              backgroundImage: `url(${import.meta.env.VITE_RAMEN_HOUSE_APP_URL + product?.attributes?.img?.data?.attributes?.formats.large?.url})`,
+                              backgroundImage: `url(${product?.attributes?.img?.data?.attributes?.formats.large?.url})`,
                               backgroundPosition: 'center',
                               backgroundSize: 'cover',
                               backgroundRepeat: 'no-repeat',
