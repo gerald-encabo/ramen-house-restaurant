@@ -11,7 +11,7 @@ SASS (Syntactically Awesome Style Sheets) has been implemented as CSS pre-proces
 For the Backend, Strapi Headless CMS is the choice to manage all the content for this webpage, and the content is being pulled using GraphQL. Render is used for cloud application hosting, and Cloudinary is SasS Solution Cloud for managing all the application media assets for Ramen House including images and SVG files.
 
 #### Live Site:
-https://ramen-house-restaurant.vercel.app/
+https://ramen-house-restaurant.vercel.app/ <br>
 https://ramen-house.vercel.app/ (without back-end)
 
 #### Main Page Display:
