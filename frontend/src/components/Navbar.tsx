@@ -9,7 +9,7 @@ import { State } from '@/redux/store'
 
 const Navbar = ({handleCartSidebar, handleMenuSidebar}: NavbarButton) => {
 
-  const navbarRef = useRef<React.MutableRefObject<any> | any>(null)
+  const navbarRef = useRef() as React.MutableRefObject<HTMLInputElement>;
   const totalQuantity = useSelector((state: State) => state.cart.totalQuantity)
 
   // Navbar background change when its scroll down below 80
