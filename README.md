@@ -15,4 +15,4 @@ https://ramen-house-restaurant.vercel.app/ <br>
 https://ramen-house.vercel.app/ (without back-end)
 
 #### Main Page Display:
-![ramen-house](https://github.com/gerald-encabo/ramen-house/assets/15988182/5ee6ce59-8f94-4caf-a06a-e0a1c1594226)
+![ramen-house](https://github.com/gerald-encabo/ramen-house-restaurant/assets/15988182/967a7e4d-08f3-4d91-bdf0-04e365790e4e)
