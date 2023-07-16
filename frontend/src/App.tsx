@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartSidebar from '@/components/CartSidebar';
 import MenuSidebar from '@/components/MenuSidebar';
-import ProductDisplay from '@/pages/ProductDisplay';
 import Home from '@/pages/Home'
 import '@/styles/globalStyle.scss';
 
@@ -44,10 +43,6 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
-      },
-      {
-        path: '/product/:id',
-        element: <ProductDisplay />
       },
       {
         path: '*',
