@@ -12,7 +12,7 @@ For the Backend, Strapi Headless CMS is the choice to manage all the content for
 
 #### Live Site:
 https://ramen-house-restaurant.vercel.app/ <br>
-https://ramen-house.vercel.app/ (without back-end)
+https://ramen-house.vercel.app/ (without Strapi Backend)
 
 #### Main Page Display:
 ![ramen-house](https://github.com/gerald-encabo/ramen-house-restaurant/assets/15988182/967a7e4d-08f3-4d91-bdf0-04e365790e4e)
