@@ -3,7 +3,7 @@ import { cartActions } from "@/redux/cartSlice";
 import { useDispatch } from 'react-redux';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import "@/styles/productCard.scss";
+import "@/styles/product-card.scss";
 import Button from "@/components/Button";
 import { useState } from "react";
 import ProductDetailsCard from "@/components/ProductDetailsCard";
