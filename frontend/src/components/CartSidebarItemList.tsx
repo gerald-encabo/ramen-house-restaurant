@@ -3,9 +3,9 @@ import { useDispatch } from 'react-redux';
 import { cartActions} from '@/redux/cartSlice';
 import '@/styles/cart-sidebar-item-list.scss';
 
-const CartSidebarItemList = (item: any) => {
+const CartSidebarItemList = ({item}: any) => {
 
-  const { id, name, price, img, quantity } = item
+  const { id, name, price, img, quantity } = item;
 
   const dispatch = useDispatch()
 
