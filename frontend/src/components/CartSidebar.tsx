@@ -1,5 +1,5 @@
 import { FaTimes } from 'react-icons/fa';
-import { CartSidebarButton, RootState } from "@/types/listTypes";
+import { CartItem, CartSidebarButton, RootState } from "@/types/listTypes";
 import Button from '@/components/Button';
 import { useSelector } from 'react-redux'
 import CartSidebarItemList from '@/components/CartSidebarItemList';
@@ -24,7 +24,7 @@ const CartSideBar = ({handleCartSidebar}: CartSidebarButton) => {
               {
                 cartProducts.length === 0
                 ? <h2 className="text-center m-5">No item added to the cart</h2> 
-                : cartProducts.map((item: any, key: number) => (
+                : cartProducts.map((item: CartItem, key: number) => (
                     <CartSidebarItemList item={item} key={key} />
                   ))
               }
@@ -33,7 +33,7 @@ const CartSideBar = ({handleCartSidebar}: CartSidebarButton) => {
           <div className='cart-sidebar-info'>
               {
                 cartProducts.length === 0
-                ? ''
+                ? null
                 : <>
                     <div className='cart-sidebar-total-and-price'>
                       <span className='cart-sidebar-total_quantity'>Quantity: {totalQuantity}</span>

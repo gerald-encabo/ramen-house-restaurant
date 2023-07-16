@@ -13,7 +13,6 @@ export interface ProductDataType {
         desc: string,
         price: number,
         img: any,
-        alt: string,
         altImg?: string,
         title?: string,
         category: string
@@ -32,7 +31,8 @@ export interface TitleProps {
 export interface ProductCardProps {
     data: ProductDataType,
     id: number,
-    prodCategory: string
+    prodCategory?: string
+    setOpen?: React.Dispatch<React.SetStateAction<boolean>> 
 }
   
 export interface ButtonProps {
