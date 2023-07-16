@@ -35,7 +35,7 @@ const ProductCard = ({data, id, prodCategory} : ProductCardProps) => {
                 ? (
                     <div className="product-card">
                         <div className="product-card-wrapper" >
-                            <div className="product-card-img">
+                            <div className="product-card-img" onClick={() => setOpen(!open)}>
                                 <LazyLoadImage
                                     src={img?.data?.attributes?.formats.large?.url} 
                                     alt={altImg} 

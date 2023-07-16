@@ -33,7 +33,7 @@ const ProductDetailsCard = ({data, setOpen}: ProductCardProps) => {
             <FaTimes />
           </div>
           <div className="tile-left-side">
-            <img src={data.attributes.img} alt={data.attributes.altImg} />
+            <img src={img?.data?.attributes?.formats.large?.url} alt={data.attributes.altImg} />
           </div>
           <div className="tile-right-side">
             <p className="tile-title">{data.attributes.name}</p>
