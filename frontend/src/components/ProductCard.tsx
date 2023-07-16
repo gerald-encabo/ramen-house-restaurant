@@ -5,11 +5,16 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import "@/styles/productCard.scss";
 import Button from "@/components/Button";
+import { useState } from "react";
+import ProductDetailsCard from "@/components/ProductDetailsCard";
 
 const ProductCard = ({data, id, prodCategory} : ProductCardProps) => {
 
     const dispatch = useDispatch()
     const { name, desc, price, img, altImg, category }: ProductDataType["attributes"] = data.attributes;
+
+    // Popup Product Details Card
+    const [open, setOpen] = useState<boolean>(false);
 
     // Add item into redux store
     const addToCart = () : void => {
@@ -48,7 +53,16 @@ const ProductCard = ({data, id, prodCategory} : ProductCardProps) => {
                             </div>
                         </div>
                     </div>
-                ) : " "
+                ) : null
+            }
+            {
+                open ? (
+                    <ProductDetailsCard
+                        data={data}
+                        setOpen={setOpen} 
+                        id={0}                    
+                    />
+                ) : null
             }
         </>
     )
