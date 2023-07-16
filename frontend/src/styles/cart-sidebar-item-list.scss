@@ -16,6 +16,7 @@
     & > img {
         width: 80px;
         height: 80px;
+        box-shadow: $primary 3px 5px;
     }
 
     &_info {
@@ -28,8 +29,9 @@
     }
 
     &_info h4 { 
+        font-size: clamp(1rem, 1.1rem, 1.2rem);
         font-weight: 600;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     &_info .price_and_quantity {
@@ -42,7 +44,7 @@
     }
 
     &_info .price_and_quantity h6 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     &_info .cart-sidebar-quantity {
@@ -52,24 +54,30 @@
         margin-bottom: 10px;
         justify-content: space-around;
         width: 100%;
-        border-bottom: 4px solid $primary;
-        border-right: 1px solid $primary;
+        align-items: center;
     }
 
     &_info .cart-sidebar-quantity .increase_btn,
     &_info .cart-sidebar-quantity .decrease_btn {
-        font-size: 15px;
+        font-size: 20px;
+        background-color: $primary;
+        border-radius: 50%;
+        color: $dark;
+        padding: 4px;
+        font-weight: 600;
+        display: flex;
     }
 
     &_info .cart-sidebar-quantity .increase_btn:hover,
     &_info .cart-sidebar-quantity .decrease_btn:hover {
-        color: $primary;
-        filter: drop-shadow(0px 0px 15px $primary);
+        background-color: $light;
         cursor: pointer;
     }
 
     &_info .cart-sidebar-quantity .total_quantity {
         margin: 0 20px;
+        padding: 5px;
+        font-size: 20px;
     }
 
     &-delete_btn {

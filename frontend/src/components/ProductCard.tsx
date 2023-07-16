@@ -40,7 +40,7 @@ const ProductCard = ({data, id, prodCategory} : ProductCardProps) => {
                             </div>
                             <div className="product-card-info">
                                 <h2 className="product-card-name">{name}</h2>
-                                <p className="product-card-desc">{desc.substring(0,50)}...</p>
+                                <p className="product-card-desc">{desc.substring(0,20)}...</p>
                                 <p className="product-card-price">${price}</p>
                                 <div onClick={addToCart}>
                                     <Button button="Add to Cart" />
