@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { createBrowserRouter,  RouterProvider, Outlet } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 import CartSidebar from '@/components/CartSidebar';
 import MenuSidebar from '@/components/MenuSidebar';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import Home from '@/pages/Home'
 import '@/styles/globalStyle.scss';
 
@@ -58,6 +59,7 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
           <RouterProvider router={router} />
+          <Analytics />
       </div>
     </ApolloProvider>
   )
