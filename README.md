@@ -5,7 +5,7 @@ This is a full stack responsive e-commerce webpage focusing on the food industry
 #### Front-End:
 A simple Single Page Application (SPA) with multiple components in Hooks, and it has a redux feature that is used to add, remove and delete items into the shopping cart.
 
-SASS (Syntactically Awesome Style Sheets) has been implemented as CSS pre-processor scripting language, and React Slick featured is also used for the Carousel. This webpage is also web accessibility friendly and responsive in different devices and browsers.
+Styled Components has been used for styling React application, and React Slick featured is also used for the Carousel. This webpage is also web accessibility friendly and responsive in different devices and browsers.
 
 #### Back-End:
 For the Backend, Strapi Headless CMS is the choice to manage all the content for this webpage, and the content is being pulled using GraphQL. Render is used for cloud application hosting, and Cloudinary is SasS Solution Cloud for managing all the application media assets for Ramen House including images and SVG files.
